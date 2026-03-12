@@ -10,30 +10,83 @@
 
     <header>
         <nav>
-            <div class="logo">Bwiam General Hospital</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="emergency-btn">Emergency: +220 XXX XXXX</a></li>
-            </ul>
-        </nav>
+    <div class="logo">Bwiam General Hospital</div>
+    
+    <button class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <ul class="nav-links" id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#news">News & Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="emergency-btn">Emergency: +220 220 4775</a></li>
+    </ul>
+</nav>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Providing Compassionate Care to Our Community</h1>
-        <p>Your health and well-being are our top priorities at Bwiam General Hospital.</p>
-        <button class="cta-main">Book Appointment</button>
-    </section>
+    <section class="hero">
+    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200" 
+         alt="Bwiam Hospital Modern Ward" 
+         style="width:100%; height:auto;">
+    <h1>Providing Compassionate Care...</h1>
+</section>
 
     <section id="services" class="services">
         <h2>Our Medical Services</h2>
         <div class="service-grid">
-            <div class="card">Maternity Care</div>
-            <div class="card">Emergency Surgery</div>
-            <div class="card">Outpatient Clinic</div>
+            <a href="services.html" class="card">Administrative Services</a>
+            <a href="services.html" class="card">Maternity Care</a>
+            <a href="services.html" class="card">Emergency Services</a>
+            <a href="services.html" class="card">Outpatient Services</a>
+            <a href="services.html" class="card">Inpatient Services</a>
+            <a href="services.html" class="card">Laboratory Services</a>
+            <a href="services.html" class="card">Antenatal Services</a>
+            <a href="services.html" class="card">Postnatal Services</a>
+            <a href="services.html" class="card">Physiotherapy Services</a>
+            <a href="services.html" class="card">Dental Services</a>
+            <a href="services.html" class="card">Public Health Services</a>
+            <a href="services.html" class="card">Radiology Services</a>
         </div>
     </section>
+    <section id="news" class="news-section" style="padding:50px 5%; background:#fff;">
+        <h2>Latest News</h2>
+        <ul class="news-list">
+            <li><a href="https://bwiamgeneralhospital.com/2026/02/16/%f0%9f%95%8a%ef%b8%8f-obituary-announcement-%f0%9f%95%8a%ef%b8%8f/" target="_blank">🕊️ OBITUARY ANNOUNCEMENT 🕊️</a></li>
+            <li><a href="https://bwiamgeneralhospital.com/2026/02/05/notification-of-opening-of-scholarship-applications-for-long-term-training-for-the-2026-2027-academic-year/" target="_blank">Scholarship Applications for 2026/2027 Academic Year</a></li>
+            <li><a href="https://bwiamgeneralhospital.com/2026/01/24/road-traffic-accidents-on-the-transgambia-highway-a-serious-concern-in-the-foni-region/" target="_blank">Road Traffic Accidents on the Transgambia Highway</a></li>
+        </ul>
+    </section>
 
+    <section id="contact" class="contact-section">
+    <h2>Contact Bwiam General Hospital</h2>
+    <p>Please use the form below for general inquiries. For emergencies, call directly.</p>
+
+    <div class="contact-container">
+        <form action="https://formspree.io/f/your-id-here" method="POST">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">How can we help you?</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
